@@ -6,6 +6,7 @@ This is a III portal website for III employees to get temp password happily.
 
 - It should establish III VPN connection firstly.
 - Python3 and pip3 commands are available.
+    - It should ensure following Python dependencies are installed:
     - pip3 install beautifulsoup4
     - pip3 install pdftotext
     - pip3 install requests
