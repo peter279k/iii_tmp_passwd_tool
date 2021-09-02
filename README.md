@@ -6,10 +6,10 @@ This is a III portal website for III employees to get temp password happily.
 
 - It should establish III VPN connection firstly.
 - Python3 and pip3 commands are available.
-    - It should ensure following Python dependencies are installed:
-    - pip3 install beautifulsoup4
-    - pip3 install pdftotext
-    - pip3 install requests
+    - Using `pip3 install pipenv --user` to install `pipenv`.
+    - If using the `Ubuntu 18.04+`, the `pipenv` command will be located on `/home/user/.local/bin` folder.
+    - Using the `PATH=$PATH:/home/user-name/.local/bin` command to be available for using `pipenv` command.
+    - Using the `pipenv install` command to create Python virtual environment and install required Python dependencies.
 
 # Usage
 
