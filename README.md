@@ -5,8 +5,9 @@ This is a III portal website for III employees to get temp password happily.
 # Prerequisites
 
 - It should establish III VPN connection firstly.
+- Using the `Ubuntu 18.04+` for the current running environment.
 - Python3 and pip3 commands are available.
-    - Using `pip3 install pipenv --user` to install `pipenv`.
+    - Using `pip3 install pipenv --user` to install `pipenv` if the `pipenv` command is not installed.
     - If using the `Ubuntu 18.04+`, the `pipenv` command will be located on `/home/user/.local/bin` folder.
     - Using the `PATH=$PATH:/home/user-name/.local/bin` command to be available for using `pipenv` command.
     - Using the `pipenv install` command to create Python virtual environment and install required Python dependencies.
@@ -31,7 +32,9 @@ your outlook mail account
 your outlook mail password
 ```
 
-- Using `./run.sh last-6-lengths-of-your-id-number` to start getting temp password on III portal!
+- Using the `pipenv shell` to enter into current Python virtual environment shell.
+- Using `./run.sh last-6-lengths-of-your-id-number` command to run `./run.sh` shell script and start getting temp password on III portal!
+- After running above `./run.sh` script is successful, using the `exit` command exit this virtual environment shell.
 
 - The output message is as follows:
 
