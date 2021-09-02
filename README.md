@@ -62,3 +62,16 @@ Now you're getting the III portal tmp password on ./iii_tmp_password.txt file!!
 
 - As above sample messages, the temporary password is stored in `./iii_tmp_password.txt` file.
 - Congrats! Now it can use this temporary password to login III portal happily :)!
+
+
+# References
+
+- https://shallowsky.com/blog/programming/deleting-pop-email.html
+- https://www.dev2qa.com/python-parse-emails-and-attachments-from-pop3-server-example/
+- https://pipenv-fork.readthedocs.io/en/latest/basics.html
+- https://pipenv.pypa.io/en/latest/install/
+- https://www.codingforentrepreneurs.com/comments/16093
+- https://github.com/pypa/pipenv/issues/84
+- https://stackoverflow.com/questions/49944871/deactivate-a-pipenv-environment
+- https://docs.python-requests.org/en/master
+- https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
