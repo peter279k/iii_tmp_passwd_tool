@@ -75,3 +75,4 @@ Now you're getting the III portal tmp password on ./iii_tmp_password.txt file!!
 - https://stackoverflow.com/questions/49944871/deactivate-a-pipenv-environment
 - https://docs.python-requests.org/en/master
 - https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
+- https://gist.github.com/strayge/f619cacb972d956ddbe1472d882821fe
