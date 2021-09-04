@@ -6,6 +6,13 @@ This is a III portal website for III employees to get temp password happily.
 
 - It should establish III VPN connection firstly.
 - Using the `Ubuntu 18.04+` for the current running environment.
+- Using the following commands to install required packages for `pdftotext` dependency:
+
+```Bash
+sudo apt-get update
+sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python3-dev
+```
+
 - Python3 and pip3 commands are available.
     - Using `pip3 install pipenv --user` to install `pipenv` if the `pipenv` command is not installed.
     - If using the `Ubuntu 18.04+`, the `pipenv` command will be located on `/home/user/.local/bin` folder.
