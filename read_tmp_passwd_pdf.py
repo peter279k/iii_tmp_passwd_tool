@@ -45,4 +45,4 @@ file_handler = open(tmp_password_file, 'w')
 file_handler.write(tmp_password + '\n')
 file_handler.close()
 
-print('Fetching tmp password from specific ' + pdf_file_name + 'has been done!')
+print('Fetching tmp password from specific ' + pdf_file_name + ' has been done!')

@@ -39,7 +39,10 @@ def decode_header(header):
 for i in range(mail_count):
     raw_email = b'\n'.join(server.retr(i+1)[1])
     parsed_email = email.message_from_bytes(raw_email)
-    decoded_subject = decode_header(parsed_email['Subject'])
+    try:
+        decoded_subject = decode_header(parsed_email['Subject'])
+    except:
+        continue
     if '[資策會入口網站]臨時密碼通知信' not in decoded_subject:
         continue
 
