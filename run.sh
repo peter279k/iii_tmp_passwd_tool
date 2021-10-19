@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Please ensure III VPN connection has been established!"
+echo "Or internal III netwwork hsa been connected!"
 echo "Get III tmp password is started..."
 echo ""
 
