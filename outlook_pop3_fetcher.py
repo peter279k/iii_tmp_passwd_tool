@@ -2,6 +2,7 @@ import os
 import sys
 import poplib
 import email
+import datetime
 
 
 server = poplib.POP3_SSL('outlook.office365.com', port=995, timeout=10)
@@ -36,12 +37,17 @@ def decode_header(header):
     else:
         return decoded_bytes.decode(charset)
 
+now_month = datetime.datetime.now().strftime('%b %Y')
 for i in range(mail_count):
     raw_email = b'\n'.join(server.retr(i+1)[1])
     parsed_email = email.message_from_bytes(raw_email)
     try:
         decoded_subject = decode_header(parsed_email['Subject'])
     except:
+        continue
+
+    if now_month not in parsed_email['Date']:
+        server.dele(i+1)
         continue
     if '[資策會入口網站]臨時密碼通知信' not in decoded_subject:
         continue
