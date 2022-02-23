@@ -69,8 +69,9 @@ Now you're getting the III portal tmp password on ./iii_tmp_password.txt file!!
 
 - As above sample messages, the temporary password is stored in `./iii_tmp_password.txt` file.
 - Congrats! Now it can use this temporary password to login III portal happily :)!
-- After using the temporary password to login account, it need to get the OTP to login III account.
+- After using the temporary password to login account, it needs to get the OTP to login III account.
 - Running the `pipenv run python3 get_otp_password.py` to get the OTP.
+- The `get_otp_password.py` is useful and it can be used in normal login with 2-factor auth with Vakten in III login portal system.
 
 # References
 
