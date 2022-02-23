@@ -65,6 +65,7 @@ Appending PDF password to pdf_auth.txt file...
 Delete pwd90486.pdf PDF file...
 Fetching tmp password from specific pwd90486.pdf has been done!
 Now you're getting the III portal tmp password on ./iii_tmp_password.txt file!!
+Don't forget to run the get_otp_password.py program!
 ```
 
 - As above sample messages, the temporary password is stored in `./iii_tmp_password.txt` file.
