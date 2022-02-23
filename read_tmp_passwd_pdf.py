@@ -31,14 +31,14 @@ with open(pdf_file_name, 'rb') as f:
 # Read all the text into one string
 pdf_contents = list(pdf)[0].split('\n')[0:-1]
 
-if len(pdf_contents) != 4:
+if len(pdf_contents) != 3:
     print('The PDF contents seem to be wrong.')
     sys.exit(1)
 
 print('Delete ' + pdf_file_name + ' PDF file...')
 os.remove(pdf_file_name)
 
-tmp_password = pdf_contents[2]
+tmp_password = pdf_contents[1]
 
 tmp_password_file = './iii_tmp_password.txt'
 file_handler = open(tmp_password_file, 'w')

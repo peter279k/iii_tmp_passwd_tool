@@ -17,7 +17,8 @@ if len(settings) != 5:
     sys.exit(1)
 
 
-url = 'https://portal.iii.org.tw/Portal/Auth/GetTempPassword'
+url = 'https://keyauth.iii.org.tw/SSO/Login/GetTempPwd'
+post_url = 'https://keyauth.iii.org.tw/SSO/Login/GetTempPwdAsync'
 resp = requests.get(url)
 html_doc = resp.text
 
@@ -27,16 +28,16 @@ verification_token = soup.select_one('input[name="__RequestVerificationToken"]')
 verification_token = verification_token.get('value')
 payload = {
     '__RequestVerificationToken': verification_token,
-    'EmployeeNo': settings[0],
+    'EmpNo': settings[0],
     'IDNO': settings[1],
     'BirthdayYear': settings[2],
     'BirthdayMonth': settings[3],
     'BirthdayDay': settings[4],
 }
 
-tmp_passwd_resp = requests.post(url, data=payload, cookies=resp.cookies)
+tmp_passwd_resp = requests.post(post_url, data=payload, cookies=resp.cookies)
 
-if '密碼已傳送' in tmp_passwd_resp.text:
+if '已成功申請臨時密碼，請至聯絡信箱檢視資訊' in tmp_passwd_resp.text:
     print('Sending getting tmp password request is successful.')
     sys.exit(0)
 

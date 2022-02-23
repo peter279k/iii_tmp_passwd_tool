@@ -26,7 +26,7 @@ sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python3-dev
 
 ```
 your employee number
-last 6 lengths of your id number(e.g. 123456)
+last 4 lengths of your id number(e.g. 3456)
 your birthday year(e.g. 1993)
 your birthday month(including zero, e.g. 01)
 your birthday day(including zero, e.g. 01)
@@ -46,7 +46,7 @@ your outlook mail password
 - The output message is as follows:
 
 ```Bash
-peter@lee:~/iii_tmp_passwd_tool$ ./run.sh last-6-lengths-of-your-id-number
+peter@lee:~/iii_tmp_passwd_tool$ ./run.sh last-4-lengths-of-your-id-number
 Please ensure III VPN connection has been established!
 Get III tmp password is started...
 
@@ -69,7 +69,8 @@ Now you're getting the III portal tmp password on ./iii_tmp_password.txt file!!
 
 - As above sample messages, the temporary password is stored in `./iii_tmp_password.txt` file.
 - Congrats! Now it can use this temporary password to login III portal happily :)!
-
+- After using the temporary password to login account, it need to get the OTP to login III account.
+- Running the `pipenv run python3 get_otp_password.py` to get the OTP.
 
 # References
 
