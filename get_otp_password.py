@@ -67,8 +67,15 @@ for i in range(mail_count):
     server.dele(i+1)
 
 with open('./iii_otp_password.txt', 'a') as file_handler:
-    file_handler.write(otp_password)
+    try:
+        file_handler.write(otp_password)
+    except (NameError):
+        print('otp password is not found.')
+        sys.exit(1)
 
 print('Storing OTP in iii_otp_password.txt!')
 
-server.quit()
+try:
+    server.quit()
+except(socket.timeout):
+    print('socket timeout')
